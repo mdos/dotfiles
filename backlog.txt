@@ -1,2 +1,2 @@
 Jedi does not work
-
+Need to deal with bashrc stuff from anaconda
