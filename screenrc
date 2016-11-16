@@ -1,0 +1,7 @@
+defscrollback 10000
+termcapinfo xterm* ti@:te@
+term screen-256color
+
+# hard-status line
+hardstatus alwayslastline '%{= kW}%-w%{= kG}[%n %t]%{= kW}%+w%< %{= kW}%-=%d.%m.%Y %c:%s%{-}'
+
