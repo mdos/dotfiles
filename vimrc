@@ -46,7 +46,7 @@ set colorcolumn=90  " visual queue for max len
 highlight ColorColumn ctermbg=Grey
 
 " Make search case insensitive
-set nohlsearch
+set hlsearch
 set incsearch
 set ignorecase
 set smartcase
