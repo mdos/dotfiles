@@ -1,2 +1,3 @@
 Jedi does not work
+Improve tmux dotfile
 Need to deal with bashrc stuff from anaconda
