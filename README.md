@@ -7,4 +7,7 @@ See [Using Git and Github to Manage Your Dotfiles](http://blog.smalleycreative.c
 * vimrc    : A vimrc suitable for symlinking to ~/.vimrc
 * screenrc : A config file for GNU screen
 
+## Installation
+Run setup.sh
+Run setup_vim.sh
 
