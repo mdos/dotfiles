@@ -11,3 +11,4 @@ See [Using Git and Github to Manage Your Dotfiles](http://blog.smalleycreative.c
 Run setup.sh
 Run setup_vim.sh
 
+Consider merging these scripts to make a single script install possible
