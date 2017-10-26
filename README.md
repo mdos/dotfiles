@@ -7,4 +7,9 @@ See [Using Git and Github to Manage Your Dotfiles](http://blog.smalleycreative.c
 * vimrc    : A vimrc suitable for symlinking to ~/.vimrc
 * screenrc : A config file for GNU screen
 
+## Symlinks
+If it seems odd that your git repo under *dotfiles* is changing whenever you
+change your .screenrc or .vimrc, it's because the files under the $HOME
+directory are symlinked to the files from the repo dir.
+
 
