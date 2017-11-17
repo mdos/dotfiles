@@ -12,4 +12,9 @@ If it seems odd that your git repo under *dotfiles* is changing whenever you
 change your .screenrc or .vimrc, it's because the files under the $HOME
 directory are symlinked to the files from the repo dir.
 
+=======
+## Installation
+Run setup.sh
+Run setup_vim.sh
 
+Consider merging these scripts to make a single script install possible
