@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Setting up git..."
+git config --global credential.helper=osxkeychain
+git config --global user.email=marc.dostie@gmail.com
+git config --global user.name=Marc Dostie
+git config --global filter.lfs.smudge=git-lfs smudge -- %f
+git config --global filter.lfs.process=git-lfs filter-process
+git config --global filter.lfs.required=true
+git config --global filter.lfs.clean=git-lfs clean -- %f
+git config --global alias.lol=log --oneline --graph --decorate --all --date=short
+git config --global alias.s=status
+git config --global alias.sub=submodule
+git config --global alias.co=checkout
+git config --global alias.l=log --oneline --graph --pretty=format:"%C(auto)%h %d %s [%C(dim white)(%cr) %cn%C(reset)]" --all
+git config --global core.repositoryformatversion=0
+git config --global core.filemode=true
+git config --global core.bare=false
+git config --global core.logallrefupdates=true
+git config --global core.ignorecase=true
+git config --global core.precomposeunicode=true
