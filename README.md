@@ -17,4 +17,9 @@ directory are symlinked to the files from the repo dir.
 Run setup.sh
 Run setup_vim.sh
 
-Consider merging these scripts to make a single script install possible
+TODO:
+* Consider merging these scripts to make a single script install possible
+* Add brew setup
+* Add nvm for node
+* Add python3
+
