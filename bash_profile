@@ -20,8 +20,13 @@ PATH=$PATH:$HOME/bin
 # Custom vim build, just use vim from brew
 #export PATH=$HOME/bin:${PATH}
 
-# Use node 6.10.3
-PATH="/usr/local/opt/node@6/bin:${PATH}"
+# Use node VER.x, right now either 6 or 8
+# $ brew install node@VER
+# $ brew unlink --force node@OLDVER
+# $ brew link --force node@VER
+export NODE_VER=8
+PATH="/usr/local/opt/node@${NODE_VER}/bin:${PATH}"
+echo "NODE VERSION CONFIGURED TO : ${NODE_VER}"
 
 # ANDROID studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
