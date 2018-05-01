@@ -1,3 +1,7 @@
+#
+# NOTE!! This file may be a symlink to my dotfiles git repo!!
+#
+
 alias ll='ls -l'
 
 # Setting PATH for Python 2.7
@@ -38,6 +42,19 @@ export PATH=$PATH:$ANDROID_NDK_HOME
 
 export PATH="/usr/local/sbin:$PATH"
 
+# Sources file $1
+source_file() {
+  if [ -e ${1} ]; then
+    echo "Sourcing setup file ${1}..."
+    . ${1}
+  else
+    echo "ERROR: File ${1} not found."
+  fi
+}
+
+# Env setup
+source_file $HOME/aws_setup.sh
+source_file $HOME/export_auth0_client_secret.sh
 
 # git prompt
 parse_git_branch() {
