@@ -1,5 +1,6 @@
 #
 # NOTE!! This file may be a symlink to my dotfiles git repo!!
+# ln -s dotfiles/bash_profile $HOME/.bash_profile
 #
 
 alias ll='ls -l'
