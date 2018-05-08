@@ -56,6 +56,8 @@ source_file() {
 # Env setup
 source_file $HOME/aws_setup.sh
 source_file $HOME/export_auth0_client_secret.sh
+source_file $HOME/export_github_token.sh
+
 
 # git prompt
 parse_git_branch() {
