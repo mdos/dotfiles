@@ -43,6 +43,10 @@ export PATH=$PATH:$ANDROID_NDK_HOME
 
 export PATH="/usr/local/sbin:$PATH"
 
+if [ -d $HOME/sandbox/util ]; then
+    export PATH=$PATH:$HOME/sandbox/util
+fi
+
 # Sources file $1
 source_file() {
   if [ -e ${1} ]; then
