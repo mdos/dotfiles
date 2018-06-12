@@ -30,7 +30,7 @@ PATH=$PATH:$HOME/bin
 # $ brew unlink --force node@OLDVER
 # $ brew link --force node@VER
 export NODE_VER=8
-PATH="/usr/local/opt/node@${NODE_VER}/bin:${PATH}"
+PATH="/usr/local/bin:/usr/local/opt/node@${NODE_VER}/bin:${PATH}"
 echo "NODE VERSION CONFIGURED TO : ${NODE_VER}"
 
 # ANDROID studio
