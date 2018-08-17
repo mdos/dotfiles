@@ -21,6 +21,9 @@ Run setup_vim.sh
 Run git_setup.sh
 
 TODO:
+* Fix node version (make sure it's linking to what you _think_ it's linking to
+* Consider reworking the script sourcing to incorporate all scripts in a
+  certain dir instead of specifically calling them out
 * Consider merging these scripts to make a single script install possible
 * Add brew setup
 * Add nvm for node
