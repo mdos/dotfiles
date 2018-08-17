@@ -26,4 +26,6 @@ for file in $FILES; do
     echo "done."
 done
 
+echo "Manually link bash_profile to your HOME/.bash_profile"
+echo " ln -s ~/dotfiles/bash_profile ~/.bash_profile"
 
