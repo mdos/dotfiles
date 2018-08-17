@@ -53,7 +53,7 @@ source_file() {
     echo "Sourcing setup file ${1}..."
     . ${1}
   else
-    echo "ERROR: File ${1} not found."
+    echo "WARNING: File ${1} not found."
   fi
 }
 
