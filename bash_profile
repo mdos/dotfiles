@@ -25,21 +25,8 @@ PATH=$PATH:$HOME/bin
 # Custom vim build, just use vim from brew
 #export PATH=$HOME/bin:${PATH}
 
-# Use node VER.x, right now either 6 or 8
-# $ brew install node@VER
-# $ brew unlink --force node@OLDVER
-# $ brew link --force node@VER
-export NODE_VER=8
-PATH="/usr/local/bin:/usr/local/opt/node@${NODE_VER}/bin:${PATH}"
-echo "NODE VERSION CONFIGURED TO : ${NODE_VER}"
+# Node versioning changed to use nvm, see install.md
 
-# ANDROID studio
-export ANDROID_HOME=$HOME/Library/Android/sdk
-# For ADB (android debug bridge (USB))
-PATH=$PATH:/Users/mdostie/Library/Android/sdk/platform-tools/
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform_tools
-export ANDROID_NDK_HOME=$HOME/Library/Android/sdk/ndk-bundle
-export PATH=$PATH:$ANDROID_NDK_HOME
 
 export PATH="/usr/local/sbin:$PATH"
 
@@ -73,3 +60,16 @@ export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n$ "
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# ANDROID studio
+# export ANDROID_HOME=$HOME/Library/Android/sdk
+# For ADB (android debug bridge (USB))
+# PATH=$PATH:/Users/mdostie/Library/Android/sdk/platform-tools/
+# export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform_tools
+# export ANDROID_NDK_HOME=$HOME/Library/Android/sdk/ndk-bundle
+# export PATH=$PATH:$ANDROID_NDK_HOME
+
+export ANDROID_SDK_ROOT="~/Library/Android/sdk" 
+export ANDROID_TOOLS=$ANDROID_SDK_ROOT"/platform-tools" 
+export PATH=$PATH:$ANDROID_SDK_ROOT:$ANDROID_TOOLS 
