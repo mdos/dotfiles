@@ -29,6 +29,14 @@ PATH=$PATH:$HOME/bin
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+# YARN: Might need this at some point
+# echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.bash_profile
+# echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.bash_profile
+# 
+# # For compilers to find icu4c you may need to set:
+# export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+# export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+
 
 export PATH="/usr/local/sbin:$PATH"
 

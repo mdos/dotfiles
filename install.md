@@ -12,3 +12,9 @@ Install nvm. Use that to install specific node version.
 nvm install 8
 Install yarn via brew, not npm
 
+# Install history
+brew install nvm
+nvm install 8
+brew install yarn
+brew install git
+
