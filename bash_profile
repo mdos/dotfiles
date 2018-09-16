@@ -29,6 +29,7 @@ PATH=$PATH:$HOME/bin
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+
 # YARN: Might need this at some point
 # echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.bash_profile
 # echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.bash_profile
@@ -38,7 +39,9 @@ export NVM_DIR="$HOME/.nvm"
 # export CPPFLAGS="-I/usr/local/opt/icu4c/include"
 
 
+# Pickup up brew first
 export PATH="/usr/local/sbin:$PATH"
+export PATH=/usr/local/bin:$PATH
 
 if [ -d $HOME/sandbox/util ]; then
     export PATH=$PATH:$HOME/sandbox/util
