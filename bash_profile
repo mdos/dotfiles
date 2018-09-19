@@ -28,8 +28,8 @@ PATH=$PATH:$HOME/bin
 # Node versioning changed to use nvm, see install.md
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
-
-
+# nvm use lts/carbon      # default is node 8.x
+# 
 # YARN: Might need this at some point
 # echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.bash_profile
 # echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.bash_profile
@@ -61,7 +61,7 @@ source_file() {
 source_file $HOME/aws_setup.sh
 source_file $HOME/export_auth0_client_secret.sh
 source_file $HOME/export_github_token.sh
-
+source_file $HOME/testing_credential_decryption_key.sh
 
 # git prompt
 parse_git_branch() {
