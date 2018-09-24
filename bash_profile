@@ -28,7 +28,7 @@ PATH=$PATH:$HOME/bin
 # Node versioning changed to use nvm, see install.md
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
-# nvm use lts/carbon      # default is node 8.x
+nvm use 8       # default is node 8.x
 # 
 # YARN: Might need this at some point
 # echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.bash_profile
@@ -69,6 +69,9 @@ parse_git_branch() {
 }
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n$ "
 
+
+# JAVA
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_181`
 
 # ANDROID studio
 # export ANDROID_HOME=$HOME/Library/Android/sdk
