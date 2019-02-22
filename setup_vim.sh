@@ -11,12 +11,12 @@ echo -n "Setting up colorscheme..."
 mkdir -p ~/.vim/colors && cd ~/.vim/colors
 wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src=13400
 cd ~/.vim/bundle
-git clone git://github.com/altercation/vim-colors-solarized.git
+git clone https://github.com/altercation/vim-colors-solarized.git
 echo " done."
 
 echo -n "Setting up powerline..."
 cd ~/.vim/bundle
-git clone git://github.com/Lokaltog/vim-powerline.git
+git clone https://github.com/Lokaltog/vim-powerline.git
 echo " done."
 
 echo -n "Setting up ctrl-p..."
@@ -26,7 +26,7 @@ echo " done."
 
 echo -n "Setting up jedi-vim..."
 cd ~/.vim/bundle
-git clone git://github.com/davidhalter/jedi-vim.git
+git clone https://github.com/davidhalter/jedi-vim.git
 echo " done."
 
 echo "Done."
