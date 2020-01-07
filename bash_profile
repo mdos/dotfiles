@@ -27,8 +27,9 @@ PATH=$PATH:$HOME/bin
 
 # Node versioning changed to use nvm, see install.md
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-nvm use 8       # default is node 8.x
+. "${NVM_DIR}/nvm.sh"
+nvm use 10       # default is node 10.x
+
 # 
 # YARN: Might need this at some point
 # echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.bash_profile
@@ -84,3 +85,4 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_181`
 export ANDROID_SDK_ROOT="~/Library/Android/sdk" 
 export ANDROID_TOOLS=$ANDROID_SDK_ROOT"/platform-tools" 
 export PATH=$PATH:$ANDROID_SDK_ROOT:$ANDROID_TOOLS 
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
