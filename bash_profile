@@ -14,6 +14,9 @@ alias ll='ls -l'
 alias l='ls -l'
 alias vi='vim'
 
+# git bash completer
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Personal bin
