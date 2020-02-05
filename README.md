@@ -27,5 +27,15 @@ TODO:
 * Consider merging these scripts to make a single script install possible
 * Add brew setup
 * Add nvm for node
+* For yarn, do not install via brew. It will pull in brew's node.
+  https://yoember.com/nodejs/the-best-way-to-install-node-js-with-yarn/
+  install yarn from npm globally, then install yarn using yarn, then remove
+  yarn from npm global so it's on it's own.
+  Use yarn and only yarn:
+    $ nvm install 10
+    $ npm i -g yarn
+    $ yarn global add yarn
+    $ npm rm -g yarn
+    $ npm rm -g npm
 * Add python3
 
