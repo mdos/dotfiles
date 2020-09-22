@@ -5,6 +5,8 @@
 
 alias ll='ls -l'
 
+CARGO_BIN=${HOME}/.cargo/bin
+
 # Setting PATH for Python 2.7
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
@@ -21,6 +23,9 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Personal bin
 PATH=$PATH:$HOME/bin
+
+# rust / cargo
+PATH=$PATH:${CARGO_BIN}
 
 # added by Anaconda3 4.1.1 installer
 #export PATH="//anaconda/bin:$PATH"
@@ -46,6 +51,10 @@ nvm use 10       # default is node 10.x
 # Pickup up brew first
 export PATH="/usr/local/sbin:$PATH"
 export PATH=/usr/local/bin:$PATH
+
+# Openssl from brew cask
+export PATH=/usr/local/opt/openssl/bin:${PATH}
+
 
 if [ -d $HOME/sandbox/util ]; then
     export PATH=$PATH:$HOME/sandbox/util
@@ -75,7 +84,7 @@ export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n$ "
 
 
 # JAVA
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_181`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # ANDROID studio
 # export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -89,3 +98,5 @@ export ANDROID_SDK_ROOT="~/Library/Android/sdk"
 export ANDROID_TOOLS=$ANDROID_SDK_ROOT"/platform-tools" 
 export PATH=$PATH:$ANDROID_SDK_ROOT:$ANDROID_TOOLS 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.cargo/bin:$PATH"
