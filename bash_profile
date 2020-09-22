@@ -15,6 +15,7 @@ complete -C /Library/Frameworks/Python.framework/Versions/2.7/bin/aws_completer 
 alias ll='ls -l'
 alias l='ls -l'
 alias vi='vim'
+alias k='kubectl'
 
 # git bash completer
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
