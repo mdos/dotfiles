@@ -83,6 +83,11 @@ parse_git_branch() {
 }
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]\n$ "
 
+# Python
+# brew install pyenv; pyenv install 3.9.0; pyenv global 3.9.0
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
 
 # JAVA
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
@@ -101,3 +106,6 @@ export PATH=$PATH:$ANDROID_SDK_ROOT:$ANDROID_TOOLS
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Created by `userpath` on 2020-10-15 12:11:17
+export PATH="$PATH:/Users/mdos/.local/bin"
