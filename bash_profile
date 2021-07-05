@@ -37,7 +37,7 @@ PATH=$PATH:${CARGO_BIN}
 # Node versioning changed to use nvm, see install.md
 export NVM_DIR="$HOME/.nvm"
 . "${NVM_DIR}/nvm.sh"
-nvm use 10       # default is node 10.x
+nvm use 14       # default is node 10.x
 
 # 
 # YARN: Might need this at some point
